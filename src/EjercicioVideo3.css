@@ -1,0 +1,78 @@
+h1{
+    width: 60%;
+    margin: 20px auto;
+    border: 3px solid midnightblue;
+    text-align: center;
+    padding: 5px;
+}
+h2{
+    width: 90%;
+    margin: 40px auto;
+    border: 2px solid midnightblue;
+    text-align: center;
+    padding:5px;
+}
+.cajaSuma{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    margin: 20px 20px
+}
+.cajaSuma input{
+    width: 100px;
+    font-size: 2rem;
+    line-height: 100px;
+    border: 1px dotted orangered;
+    border-radius: 10px;
+    margin: 6px;
+    color: rebeccapurple;
+    text-align: center;
+    outline: none;
+}
+
+.cajaSuma button{
+    font-size: 2rem;
+    margin-left: 10px;
+    padding: 10px;
+    color: orangered;
+}
+
+.verde{
+    color: green;
+}
+.rojo{
+    color: orangered;
+}
+
+.contenedorMonedas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedorMonedas input{
+    width: 150px;
+    margin: 10px;
+    font-size: 1.5rem;
+    padding: 1rem;
+    outline: none;
+    border: 2px solid midnightblue;
+    color: orange;
+    border-radius: 5px;
+}
+
+.contenedorMonedas label{
+    color: peru;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.contenedorMonedas label:first-of-type{
+    color: green;
+}
+footer{
+    margin-top:50px;
+    background-image: url('imagenes/fondoDotted.jpg');
+    background-repeat: repeat; /* Para que la imagen no se repita */
+    background-size: contain;
+    height: 200px;
+}

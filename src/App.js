@@ -4,6 +4,7 @@ import hufflepuff from "./imagenes/hp.png"; //Importamos las imágenes y la asig
 import ravenclaw from "./imagenes/rc.png";
 import griffindor from "./imagenes/gf.png";
 import slytherin from "./imagenes/sl.png"; //Importamos las imágenes y la asignamos a una variable
+import EjercicioVideo4 from "./EjercicioVideo4";
 function App() {
   //Aquí puedo crear variables
 
@@ -35,6 +36,7 @@ function App() {
         </div>
       </main>
 
+    <EjercicioVideo4/>   {/*Este es otro componente*/}
     </div>
   );
 }
