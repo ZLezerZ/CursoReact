@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Estilos del componente padre*/
+h3{
+    padding: 20px;
+}
+.totalCartas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+/*Estilos de componente hijo*/
+.cartaCasa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    background-color: url('./imagenes/atomicExplosion.png');
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 3em;
+}
+.cartaCasa img{
+    width: 80%;
+    margin: 20px auto;
+}
+.cartaCasa h3{
+    text-align: center;
+}
+.cartaCasa-precio{
+    margin: 1em;
+    padding: 0px 30px;
+}
+
+.cartaCasa button{
+    text-align: center;
+    align-self: center;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-bottom: 1em;
+}

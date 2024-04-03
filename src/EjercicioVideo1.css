@@ -1,0 +1,58 @@
+
+*{
+    box-sizing: border-box; 
+}
+
+main{
+    width: 980px;
+    margin: auto;
+}
+@keyframes rotar {
+    0% {
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.molecula {
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    animation: rotar 3s forwards infinite;
+}
+
+.tarjetasEscudos{
+    display: flex;
+    justify-content: center;
+}
+
+.tarjetasEscudos span{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    background-color: rgb(233, 222, 255);
+    border: 3px inset gold;
+    border-radius: 0px 20px 40px 20px;
+    box-shadow: 5px 5px 5px -5px;
+}
+
+.tarjetasEscudos span h3{
+    color: rgba(98, 66, 17, 0.921);
+    margin: 15px auto 0px;
+}
