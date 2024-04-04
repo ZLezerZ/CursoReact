@@ -1,16 +1,24 @@
-import React from 'react'
-import './EjercicioVideo4.css';
+import {React, useRef} from 'react'
 
-const EjercicioVideo4HijoB = ({ casasHogwarts }) => {
+const EjercicioVideo4HijoB = ({ casasHogwarts, precioTotal, setPrecioTotal}) => {
+
+    const suma =() =>{
+        setPrecioTotal(precioTotal + casasHogwarts[1].precio);
+        quitar();
+    }
+    const cartaRef = useRef(null);
+    const quitar=()=>{
+        cartaRef.current.style.display="none";
+    }
     return (
-        <div className='cartaCasa'>
+        <div className={'cartaCasa casaB'} ref={cartaRef}>
             <img src={casasHogwarts[1].img} />
             <h3>{casasHogwarts[1].casa}</h3>
             <div className='cartaCasa-precio'>
                 <p>Precio:</p>
                 <p>{casasHogwarts[1].precio}$</p>
             </div>
-                <button>Comprar</button>
+                <button onClick={suma}>Reservar</button>
         </div>
     )
 }

@@ -1,37 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&family=Rubik+Scribble&display=swap');
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 /*Estilos del componente padre*/
+h2{
+    margin: 20px 0;
+    position: relative;
+    text-align: center;
+    font-family: "Quintessential", serif;
+    font-size: 2.5em;
+    color: rgb(250, 180, 250);
+    filter: drop-shadow(2px 1px 1px rgb(233, 112, 233)) drop-shadow(0px 0px 1px rgb(233, 112, 233));
+    -webkit-box-reflect: below -10px linear-gradient(transparent, transparent,  rgba(9,0,0,.5));
+}
+/*h2::before{
+    content: "Reserve la cena en alguna de nuestras Casas";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    transform: translateY(2.5rem) scaleY(-1) translateX(0.5rem);
+    overflow: hidden;
+    filter: blur( .1rem) drop-shadow(10px -2px 4px rgb(233, 112, 233));
+}*/
 h3{
-    padding: 20px;
+    padding: 40px 5em 20px;
+    color: white;
+    font-family: "Quintessential", serif;
 }
 .totalCartas{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: auto;
 }
 /*Estilos de componente hijo*/
 .cartaCasa{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 35%;
-    background-color: url('./imagenes/atomicExplosion.png');
+    width: 25rem;
     margin: 20px;
-    border: 2px solid black;
     border-radius: 3em;
+    transition: all 0.5s;
+    filter: grayscale(95%);
+}
+.casaA{
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(233, 112, 112, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url('./imagenes/tapizado2.jpg'); /*EXCELENTE FORMA DE PONER UN FONDO Y CAMBIARLE EL COLOR!*/
+}
+.casaA img{
+    filter: drop-shadow(0 0 2px rgba(233, 112, 112, 0.5)) drop-shadow(0 0 2px rgba(233, 112, 112, 0.5));
+}
+.casaB{
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(233, 233, 112, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url('./imagenes/tapizado2.jpg');}
+.casaB img{
+    filter: drop-shadow(0 0 2px rgba(233, 233, 112, 0.5)) drop-shadow(0 0 2px rgba(233, 233, 112, 0.5));
+}
+.casaC{
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(112, 112, 233, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url('./imagenes/tapizado2.jpg'); 
+}
+.casaC img{
+    filter: drop-shadow(0 0 2px rgba(112, 112, 233, .5)) drop-shadow(0 0 2px rgba(112, 112, 233, .5));
+}
+.casaD{
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(112, 233, 112, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url('./imagenes/tapizado2.jpg'); 
+}
+.casaD img{
+    filter: drop-shadow(0 0 2px rgba(233, 233, 112, 0.5))drop-shadow(0 0 2px rgba(233, 233, 112, 0.5));
+}
+.cartaCasa:hover{
+    filter: none;
 }
 .cartaCasa img{
     width: 80%;
-    margin: 20px auto;
+    margin: 3rem auto 0;
 }
 .cartaCasa h3{
-    text-align: center;
+    align-self: center;
+    font-size: 2.2em;
+    font-family: "Quintessential", serif;
+    color: rgba(255, 166, 0, 0.7);
+    filter: drop-shadow(0px 0px 2px black) drop-shadow(0px 0px 2px black) drop-shadow(0 0 2px black);
 }
 .cartaCasa-precio{
+    font-family: "Quintessential", serif;
+    font-size: 1.3em;
+    color: rgb(243, 207, 140);
+    filter: drop-shadow(0px 0px 1px black) drop-shadow(0px 0px 1px black) drop-shadow(0 0 1px black);
     margin: 1em;
     padding: 0px 30px;
 }
@@ -40,7 +97,7 @@ h3{
     text-align: center;
     align-self: center;
     cursor: pointer;
-    background-color: #4CAF50;
+    background-color: rgba(76, 175, 80, .8);
     color: white;
     border: none;
     border-radius: 1em;
@@ -48,4 +105,12 @@ h3{
     font-weight: bold;
     padding: 10px 20px;
     margin-bottom: 1em;
+}
+
+.cartaCasa button:hover{
+    background-color: rgba(76, 175, 80, .9);
+}
+
+.cartaCasa button:active{
+    background-color: rgba(221, 81, 30, 0.8);
 }
