@@ -50,24 +50,24 @@ h3{
 .casaA{
     background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(233, 112, 112, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url('./imagenes/tapizado2.jpg'); /*EXCELENTE FORMA DE PONER UN FONDO Y CAMBIARLE EL COLOR!*/
 }
-.casaA img{
+.casaA:hover img{
     filter: drop-shadow(0 0 2px rgba(233, 112, 112, 0.5)) drop-shadow(0 0 2px rgba(233, 112, 112, 0.5));
 }
 .casaB{
     background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(233, 233, 112, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url('./imagenes/tapizado2.jpg');}
-.casaB img{
+.casaB:hover img{
     filter: drop-shadow(0 0 2px rgba(233, 233, 112, 0.5)) drop-shadow(0 0 2px rgba(233, 233, 112, 0.5));
 }
 .casaC{
     background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(112, 112, 233, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url('./imagenes/tapizado2.jpg'); 
 }
-.casaC img{
+.casaC:hover img{
     filter: drop-shadow(0 0 2px rgba(112, 112, 233, .5)) drop-shadow(0 0 2px rgba(112, 112, 233, .5));
 }
 .casaD{
     background-image: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(112, 233, 112, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%), url('./imagenes/tapizado2.jpg'); 
 }
-.casaD img{
+.casaD:hover img{
     filter: drop-shadow(0 0 2px rgba(233, 233, 112, 0.5))drop-shadow(0 0 2px rgba(233, 233, 112, 0.5));
 }
 .cartaCasa:hover{
@@ -82,7 +82,12 @@ h3{
     font-size: 2.2em;
     font-family: "Quintessential", serif;
     color: rgba(255, 166, 0, 0.7);
+    filter: drop-shadow(0px 0px 2px black) drop-shadow(0px 0px 2px black);
+    
+}
+.cartaCasa:Hover h3{
     filter: drop-shadow(0px 0px 2px black) drop-shadow(0px 0px 2px black) drop-shadow(0 0 2px black);
+
 }
 .cartaCasa-precio{
     font-family: "Quintessential", serif;

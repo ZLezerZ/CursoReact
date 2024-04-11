@@ -25,7 +25,7 @@ main{
     }
 }
 
-.molecula {
+.escudo {
     position: relative;
     display: block;
     margin: 20px auto;
@@ -34,12 +34,14 @@ main{
 }
 
 .tarjetasEscudos{
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .tarjetasEscudos span{
     width: 20%;
+    height: 300px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -51,8 +53,10 @@ main{
     border-radius: 0px 20px 40px 20px;
     box-shadow: 5px 5px 5px -5px;
 }
-
+.tarjetasEscudos img{
+    height: 11em;
+}
 .tarjetasEscudos span h3{
     color: rgba(98, 66, 17, 0.921);
-    margin: 15px auto 0px;
+    align-self: center;
 }

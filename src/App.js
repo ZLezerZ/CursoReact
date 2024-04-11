@@ -1,5 +1,5 @@
 import "./App.css";
-import EjercicioVideo1 from "./EjercicioVideo1";
+//import EjercicioVideo1 from "./EjercicioVideo1";
 import EjercicioVideo4 from "./EjercicioVideo4";
 function App() {
   //Aquí puedo crear variables
